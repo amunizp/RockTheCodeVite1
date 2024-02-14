@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Flipper</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="block picker">
+      <h1>Color de fondo:</h1>
+      <h2>Código de color</h2>
+
+    </div>
+    <div class="block">
+      <h2>Elige un color</h2>
+      <h2 id="colorName">-</h2>
+      <select id="color-picker">
+        <option value="@fff">-</option>
+      </select>
+      <p>
+        An example demonstrating the use of the
+        <code>&lt;input type="color"&gt;</code> control.
+      </p>
+      <div>
+        <label for="color-input" id="labelText">Elije color de los glifos.</label>
+        <input type="color" id="color-text" name="color-input" value="#000000" />
+      </div>
+      <p>
+        Watch the paragraph colors change when you adjust the color picker. As you
+        make changes in the color picker, the first paragraph's color changes, as a
+        preview (this uses the <code>input</code> event). When you close the color
+        picker, the <code>change</code> event fires, and we detect that to change
+        every paragraph to the selected color.
+      </p>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
